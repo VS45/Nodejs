@@ -46,4 +46,4 @@ const newPersons=persons.map((person,index)=>{
     return newPerson;
 })
 console.log(newPersons)
-//
+
