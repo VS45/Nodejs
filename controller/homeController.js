@@ -1,3 +1,6 @@
+const { getllPersons } = require("../model/person")
+
 exports.getHomePage=(req,res)=>{
-   res.render('home',{title:'Home Page'})
+    const personList=getllPersons()
+   res.render('home',{title:'Home Page from controller',persons:personList})
 }
